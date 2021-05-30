@@ -26,7 +26,7 @@ public class Socket_TCP {
                 new InputStreamReader(socket.getInputStream())
         );
         this.connected = true;
-        this.LOGGER.LOG("Connected to Server:" + ip + ":" + port);
+        this.LOGGER.LOG("Connected to Server: " + ip + ":" + port);
     }
 
     public String sendMessage(String msg) throws IOException{

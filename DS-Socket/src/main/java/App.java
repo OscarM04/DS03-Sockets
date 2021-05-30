@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -7,8 +8,14 @@ import java.util.Properties;
 public class App {
 
     public static void main(String[] args) throws IOException {
-        String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
-        String appConfigPath = rootPath + "local.properties";
+        String appConfigPath;
+        if (new File("./socket.properties").isFile()){
+            appConfigPath = "./socket.properties";
+            //System.out.println("Encontre el archivo");
+        }else {
+            String rootPath = Thread.currentThread().getContextClassLoader().getResource("").getPath();
+            appConfigPath = rootPath + "local.properties";
+        }
 
         Properties properties = new Properties();
         properties.load( new FileInputStream(appConfigPath));
