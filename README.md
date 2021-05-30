@@ -4,7 +4,9 @@ Actividad 3 de Distribuidos
 
 ## Preparacion del Entorno de Desarrollo
  - Se debe tener instalado java en su version 8
- - Se debe tener instalado Maven en versiones mayores a 3.1.0. (En Windows https://www.javatpoint.com/how-to-install-maven)
+ - Se debe tener instalado Maven en versiones mayores a 3.1.0. 
+    - En Windows https://www.javatpoint.com/how-to-install-maven
+    - En Ubuntu https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/
 Ejecutar para clonar el repositorio
 ```console
 $ git clone https://github.com/OscarM04/DS03-Sockets.git
