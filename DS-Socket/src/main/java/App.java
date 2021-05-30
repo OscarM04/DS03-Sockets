@@ -36,7 +36,7 @@ public class App {
                     Integer.parseInt(properties.getProperty("client_udp_port")),
                     messageLength*2
             );
-            client.sendMessage("givememsg 8085");
+            client.sendMessage("givememsg "+ properties.getProperty("client_udp_port"));
             String message = listenerSocket.getData();
             String decodedMessage = Utils.decodeBase64String(message);
 
