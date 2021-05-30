@@ -22,7 +22,7 @@ Es necesario modificar las variables en el archivo `socket.properties`. Acorde a
  - username
  - show_logs (En caso de que se desee ver la interaccion con el servidor)
 
-###Ejecución:
+### Ejecución:
 Ejecutar los siguientes comandos para correr el cliente 
 - El ejecutable es para compilar el proyecto y el siguiente comando es para la ejecucion del mismo
 ```console
