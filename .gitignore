@@ -1,8 +1,15 @@
+
+.idea
+target
+/DS-Socket/.idea
+.project
+.classpath
 # Compiled class file
 *.class
 
 # Log file
 *.log
+*.swp
 
 # BlueJ files
 *.ctxt
@@ -11,6 +18,8 @@
 .mtj.tmp/
 
 # Package Files #
+*.lst
+*.iml
 *.jar
 *.war
 *.nar

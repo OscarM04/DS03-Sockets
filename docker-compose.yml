@@ -1,0 +1,28 @@
+version: '3.9'
+services:
+  app:
+    build: ./DS-Socket/
+    networks:
+      - socket
+    #volumes:
+    #  - './DS-Socket/src/main/resources/app.properties:/'
+    environment:
+      - 'SERVER_HOST=server'
+      - 'SERVER_PORT=19876'
+      - 'CLIENT_UDP_PORT=8085'
+      - 'USERNAME=ojmarquez.17'
+      - 'SHOW_LOGS=true'
+
+  server:
+    build: ./Getmymsg
+    restart: always
+    networks:
+      - socket
+    volumes:
+      - './Getmymsg/getmymsg.log:/app/getmymsg.log'
+    environment:
+      - 'USER_HOSTNAME=app'
+      - 'USER_MSG=Esto es una prueba'
+
+networks:
+  socket:
