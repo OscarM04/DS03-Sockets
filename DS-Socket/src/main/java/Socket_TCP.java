@@ -42,6 +42,7 @@ public class Socket_TCP {
         if (
                 resp.equals("error invalid user name") ||
                         resp.equals("error invalid command") ||
+                        resp.equals("error invalid src ip") ||
                         resp.equals("error unvalidated user") ||
                         resp.equals("error invalid checksum format")
         ) {
